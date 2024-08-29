@@ -1,8 +1,11 @@
 @import "_header";
 @import "_footer";
+@import "_fonts";
 
 html,
 body {
     padding: 0;
     margin: 0;
+    font-family: 'Oswald';
+    font-weight: 400;
 }
