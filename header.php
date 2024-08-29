@@ -14,7 +14,15 @@
     <header>
 
         <div class="contenedor-header">
-            <img src="<?php echo get_template_directory_uri(); ?>/imgs/Logo owens.png" alt="Logo Owens">
+
+            <?php
+            if ( function_exists( 'the_custom_logo' ) ) {
+                the_custom_logo();
+            } else {
+                echo '<img src="' . get_template_directory_uri() . '/imgs/Logo owens.png" alt="Logo Owens">';
+            }
+            ?>
+
 
             <!-- Botón de menú hamburguesa -->
             <button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
