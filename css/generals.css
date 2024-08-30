@@ -9,6 +9,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0px;
+  max-width: 1280px;
 }
 
 .contenedor-header img {
@@ -129,11 +130,16 @@
     color: #dc3130;
   }
 }
+footer {
+  background-color: #e7e7e6;
+}
+
 .contenedor-footer {
   margin: 0 auto;
-  background-color: #e7e7e6;
-  padding: 4% 7% 2% 7%;
+  padding: 4% 0% 2% 0%;
   font-family: "Roboto";
+  width: 90%;
+  max-width: 1280px;
 }
 
 .footer-inferior {
