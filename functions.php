@@ -2,7 +2,8 @@
 
 function transaco_menus() {
     register_nav_menus(array(
-        'header' => __('Header', 'Transaco 2024')
+        'header' => __('Header', 'Transaco 2024'),
+        'productos' => __('Productos', 'Transaco 2024')
     ));
 }
 

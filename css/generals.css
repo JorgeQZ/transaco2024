@@ -39,6 +39,7 @@
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
+  cursor: pointer;
 }
 
 .contenedor-header a:hover {
@@ -128,7 +129,41 @@
     color: #dc3130;
   }
 }
-.menus-footer-superior {
+.contenedor-footer {
+  margin: 0 auto;
+  background-color: #e7e7e6;
+  padding: 4% 7% 2% 7%;
+  font-family: "Roboto";
+}
+
+.footer-inferior {
+  font-size: 13px;
+}
+.footer-inferior p {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.footer-medio {
+  padding: 60px 0px 0px;
+  margin: 0 auto;
+  width: 100%;
+  font-size: 11px;
+}
+.footer-medio p {
+  padding: 30px 0px;
+  text-align: justify;
+}
+.footer-medio hr {
+  height: 2px;
+  /* Ajusta el valor según el grosor que desees */
+  background-color: #000;
+  /* Cambia el color de la línea si lo deseas */
+  border: none;
+  /* Elimina cualquier borde predeterminado */
+}
+
+.container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -136,52 +171,92 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
-
-.contenedor-footer {
-  margin: 0 auto;
-  width: 90%;
-}
-
-.p-footer-medio {
-  padding: 30px 0px;
-  text-align: justify;
-}
-
-.p-footer-inferior {
-  margin: 0 auto;
-  text-align: center;
-}
-
-.menus-footer-medio {
-  padding: 60px 0px 0px;
-  margin: 0 auto;
-  width: 100%;
-}
-
-.menu-web .header .menu {
-  padding: 0;
-}
-
-.menu-web a {
+.container .column:nth-child(2) a, .container .column:nth-child(3) a {
   text-decoration: none;
   color: black;
-  padding: 10px 0px;
-  cursor: pointer;
   -webkit-transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, -webkit-transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease;
   transition: background-color 0.3s ease, transform 0.3s ease, -webkit-transform 0.3s ease;
 }
-
-.menu-web a:hover {
+.container .column:nth-child(2) a:hover, .container .column:nth-child(3) a:hover {
   color: #dc3130;
 }
-
-.menu-web li {
+.container .column:nth-child(2) .menu, .container .column:nth-child(3) .menu {
   list-style-type: none;
-  padding: 0px 0px 10px;
+  padding: 0;
+}
+.container .column:nth-child(4) {
+  font-size: 13px;
 }
 
+@media screen and (max-width: 768px) and (min-width: 435px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 70%;
+    margin: 0 auto;
+    gap: 30px;
+  }
+}
+@media screen and (max-width: 434px) {
+  .container {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-line-pack: center;
+        align-content: center;
+    gap: 45px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .column:nth-child(1) {
+    width: 100%;
+    display: grid;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .column:nth-child(2) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .column:nth-child(3) {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 25%;
+  }
+  .container .column:nth-child(4) {
+    width: 100%;
+  }
+  .container .column:nth-child(4) .social-icons {
+    margin: 0 auto;
+  }
+  .container .column:nth-child(4) .wp-container-core-group-is-layout-5 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-line-pack: center;
+        align-content: center;
+  }
+  .container .column:nth-child(5) {
+    width: 100%;
+  }
+  .container .column:nth-child(5) .wp-container-core-group-is-layout-6 {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: normal;
+        -ms-flex-align: normal;
+            align-items: normal;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 @font-face {
   font-family: "Oswald";
   src: url("../fonts/Oswald-ExtraLight.eot");

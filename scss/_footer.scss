@@ -1,46 +1,125 @@
-.menus-footer-superior {
-    display: flex;
-    justify-content: space-between;
-}
-
 .contenedor-footer {
     margin: 0 auto;
-    width: 90%;
+    background-color: #e7e7e6;
+    padding: 4% 7% 2% 7%;
+    font-family: "Roboto";
 }
 
-.p-footer-medio {
-    padding: 30px 0px;
-    text-align: justify;
+.footer-inferior {
+    font-size: 13px;
+
+    p {
+        margin: 0 auto;
+        text-align: center;
+    }
 }
 
-.p-footer-inferior {
-    margin: 0 auto;
-    text-align: center;
-}
-
-.menus-footer-medio {
+.footer-medio {
     padding: 60px 0px 0px;
     margin: 0 auto;
     width: 100%;
+    font-size: 11px;
+
+    p {
+        padding: 30px 0px;
+        text-align: justify;
+    }
+
+    hr {
+        height: 2px;
+        /* Ajusta el valor según el grosor que desees */
+        background-color: #000;
+        /* Cambia el color de la línea si lo deseas */
+        border: none;
+        /* Elimina cualquier borde predeterminado */
+    }
 }
 
-.menu-web .header .menu {
-    padding: 0;
+.container {
+    display: flex;
+    justify-content: space-between;
+
+    .column {
+
+        &:nth-child(2),
+        &:nth-child(3) {
+            a {
+                text-decoration: none;
+                color: black;
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
+
+            a:hover {
+                color: #dc3130;
+            }
+
+            .menu {
+                list-style-type: none;
+                padding: 0;
+            }
+        }
+
+        &:nth-child(4) {
+            font-size: 13px;
+        }
+    }
 }
 
-.menu-web a {
-    text-decoration: none;
-    color: black;
-    padding: 10px 0px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
+@media screen and (max-width: 768px) and (min-width: 435px) {
+    .container {
+        flex-wrap: wrap;
+        width: 70%;
+        margin: 0 auto;
+        gap: 30px;
+    }
 }
 
-.menu-web a:hover {
-    color: #dc3130;
-}
+@media screen and (max-width: 434px) {
+    .container {
+        flex-wrap: wrap;
+        align-content: center;
+        gap: 45px;
+        justify-content: center;
 
-.menu-web li {
-    list-style-type: none;
-    padding: 0px 0px 10px;
+        .column {
+
+            &:nth-child(1) {
+                width: 100%;
+                display: grid;
+                justify-content: center;
+            }
+
+            &:nth-child(2) {
+                justify-content: center;
+            }
+
+            &:nth-child(3) {
+                justify-content: center;
+                width: 25%;
+            }
+
+            &:nth-child(4) {
+                width: 100%;
+
+                .social-icons {
+                    margin: 0 auto;
+                }
+
+                .wp-container-core-group-is-layout-5 {
+                    justify-content: center;
+                    align-content: center;
+                }
+            }
+
+            &:nth-child(5) {
+                width: 100%;
+
+                .wp-container-core-group-is-layout-6 {
+                    flex-direction: row;
+                    align-items: normal;
+                    justify-content: center;
+                }
+            }
+        }
+    }
 }
