@@ -1,0 +1,94 @@
+.contenedor-general {
+  margin: 0 auto;
+  width: 90%;
+  max-width: 1280px;
+}
+
+.contenedor-noticias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  font-family: "Roboto";
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 50px 0px;
+  gap: 80px;
+}
+
+.imagen {
+  width: 300px;
+}
+
+.titulo {
+  font-family: "Oswald";
+}
+
+.contenedor-paginacion {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding-bottom: 50px;
+  gap: 50px;
+}
+
+.contenedor-search {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 20px;
+  padding-top: 50px;
+}
+
+.input-buscador {
+  padding: 10px;
+  font-size: 16px;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.boton-search {
+  padding: 10px 20px;
+  background-color: #0073aa;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.boton-search :hover {
+  background-color: #005885;
+}
+
+.search-results {
+  border: 1px solid #ccc;
+  background: #fff;
+  max-height: 300px;
+  overflow-y: auto;
+  margin-top: 10px;
+}
+.search-results ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.search-results li {
+  padding: 10px;
+  border-bottom: 1px solid #eee;
+}
+.search-results li :hover {
+  background-color: #f9f9f9;
+}
+.search-results a {
+  text-decoration: none;
+  color: #333;
+}

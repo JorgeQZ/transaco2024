@@ -1,0 +1,91 @@
+.contenedor-general {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1280px;
+}
+
+.contenedor-noticias {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto";
+    justify-content: space-between;
+    padding: 50px 0px;
+    gap: 80px;
+}
+
+.imagen {
+    width: 300px;
+}
+
+.titulo {
+    font-family: 'Oswald';
+}
+
+// Revisar
+
+.contenedor-paginacion {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+    gap: 50px;
+}
+
+.contenedor-search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 50px;
+}
+
+.input-buscador {
+    padding: 10px;
+    font-size: 16px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+.boton-search {
+    padding: 10px 20px;
+    background-color: #0073aa;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+
+    :hover {
+        background-color: #005885;
+    }
+}
+
+.search-results {
+    border: 1px solid #ccc;
+    background: #fff;
+    max-height: 300px;
+    overflow-y: auto;
+    margin-top: 10px;
+
+    ul {
+        list-style: none;
+        padding: 0;
+        margin: 0;
+    }
+
+    li {
+        padding: 10px;
+        border-bottom: 1px solid #eee;
+
+        :hover {
+            background-color: #f9f9f9;
+        }
+    }
+
+    a {
+        text-decoration: none;
+        color: #333;
+    }
+
+}
+
+// Revisar
