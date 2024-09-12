@@ -68,14 +68,12 @@ footer {
         &:nth-child(4) {
             font-size: 13px;
 
-
             a {
+                transition: background-color 0.3s ease, transform 0.3s ease;
+            }
 
-                transition: all 300ms;
-
-                &:hover {
-                    color: #000;
-                }
+            a:hover {
+                color: black;
             }
         }
     }
